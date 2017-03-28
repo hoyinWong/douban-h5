@@ -1,0 +1,73 @@
+header.w-head
+	div.w-head-main
+		a(href="/") 豆瓣
+		nav
+			ul
+				li 电影
+				li 图书
+				li 广播
+				li 小组
+			span.search-icon(v-on:click="showTabsClick")
+	div.w-head-tabs(v-if="showTabs")
+		div.tabs-head
+			span.close-nav(v-on:click="closeTabsClick") 关闭
+			form(action="/search" method="GET")
+				input(type="search")
+		ul.tabs-list
+			li
+				a(href="#")
+					strong.tab1 电影
+					span 影院热映
+			li
+				a(href="#")
+					strong.tab2 电视
+					span 正在热播
+			li
+				a(href="#")
+					strong.tab3 图书
+					span 畅销排行
+			li
+				a(href="#")
+					strong.tab4 同城
+					span 周末活动
+			li
+				a(href="#")
+					strong.tab5 小组
+					span 志趣相投
+			li 
+				a(href="#")
+					strong.tab6 音乐
+					span 新碟榜
+			li 
+				a(href="#")
+					strong.tab7 阅读
+					span 电子书
+			li 
+				a(href="#")
+					strong.tab8 游戏
+					span 虚拟世界
+			li 
+				a(href="#")
+					strong.tab9 应用
+					span 玩手机
+			li
+				a(href="#")
+					strong.tab10 东西
+					span 心爱之物
+			li 
+				a(href="#")
+					strong.tab11 FM
+					span 红心歌单
+			li 
+				a(href="#")
+					strong.tab12 市集
+					span 购买原创
+		div.tabs-footer
+			div.foot-item
+				a(href="#") 注册账号
+				a(href="#") 登录豆瓣
+			div.foot-item
+				a(href="#") 使用桌面版
+				a(href="#") 使用豆瓣App
+
+

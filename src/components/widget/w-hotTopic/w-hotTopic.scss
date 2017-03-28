@@ -1,0 +1,21 @@
+@import "../../../scss/_mixin";
+.w-hotTopic ul{
+	padding: 24px 16px 0;/*no*/
+	overflow: hidden;
+	li{
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding: 3px 3px;/*no*/;
+		a{
+			display: block;
+			font-size: 15px;/*px*/
+			color: #494949;
+			background-color: #f6f6f6;
+			text-align: center;
+			padding: 12px 5px;/*no*/
+			border-radius: 3px 3px;/*no*/
+			@extend %fixed_width_content;
+		}
+	}
+}
